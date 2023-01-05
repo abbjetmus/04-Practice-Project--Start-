@@ -1,0 +1,8 @@
+name: Issues
+on: issues
+jobs: 
+  event-details:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Print event details
+        run: echo ${{context.issue}}
